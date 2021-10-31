@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tastes.css">
+    <link rel="stylesheet" href="css/future.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="js/parallax0.js"></script>
+    <title>Mis Gustos</title>
+  </head>
+  <body>
+    <header>
+        <h2 class="logo"><a href="index.html">MyWebSite</a></h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+          <a href="tastes.html">Gustos Personales</a>
+          <a href="graduation.html">Graduacion</a>
+          <a href="future.html">Mi Futuro</a>
+          <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times"></i>
+          </label>
+        </ul>
+    </header>
+
+    <section class="fut">
+      <div class="title-tastes">
+        <h1>3 Años en el Futuro</h1>
+        <p>¿Como me veo 3 años en el futuro?</p>
+        <p>En este preciso momento me es casi imposible definir lo que quiero, ya que es bastante lo que quiero hacer que no sé por dónde empezar... Aunque de algo si estoy seguro es que quiero hacer cosas muy grandes que contribuyan al desarrollo tecnológico, Sin embargo, ese todavía es un futuro muy lejano. </p>
+        <p>Sin embargo en 3 años posiblemente me encuentre como desarrollador de aplicaciones web, ya que me gusta mucho ese campo de la informática. Un posible lugar donde me gustaría trabajar seria en Discord, es una aplicación freeware de VoIP diseñada para comunidades de videojuegos que está destinada a crear grupos de chat y mantener la comunicación entre grandes grupos de personas. </p>
+      </div>
+    </section>
+    <div class="container-comp">
+      <div class="box">
+        <div class="circulo">
+          <img class="discord_an" src="img/future/logodis.png" alt="">
+        </div>
+      </div>
+      <div class="box_1">
+        <h1>Discord</h1>
+        <br>
+        <p>Al visitar la página de Discord me motiva a diseñar aplicaciones similares a él por su creatividad en su contenido y la manera de proyectar sus ideas.</p>
+        <br>
+        <p>Algo muy aparte al desarrollo de apliaciones es el poder viajar y conocer mas culturas, aprender de ellos y sobre todo probar cada una de sus gatronomias.
+Me llama mucho la atencion poder conocer a mas personas a las cuales les puede aprender demasiado, por ejemplo a las cosas a las que se dedican, lo que les gusta hacer, a fin de cuentas divertirme.</p>
+
+      </div>
+    </div>
+
+    <div class="animation-area">
+      <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <svg class="wave1" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="wave1" d=""/></svg>
+    <footer>
+      <p class="copyright">Todos los derechos reservados
+        ©<script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+      Mario Aleman.</p>
+    </footer>
+
+    <script>
+      var scene = document.getElementById('scene');
+      var parallax = new Parallax(scene);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="js/wavify.js"></script>
+    <script src="js/jquery.wavify.js"></script>
+    <script type="text/javascript">
+      var myWave = $('#wave1').wavify({
+        height: 750,
+        bones: 3,
+        amplitude: 40,
+        color: 'rgba(37,38,39,1)',
+        speed: .25
+      });
+    </script>
+  </body>
+</html>

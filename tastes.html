@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tastes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="js/parallax0.js"></script>
+    <title>Mis Gustos</title>
+  </head>
+  <body>
+    <header>
+        <h2 class="logo"><a href="index.html">MyWebSite</a></h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+          <a href="tastes.html">Gustos Personales</a>
+          <a href="graduation.html">Graduacion</a>
+          <a href="future.html">Mi Futuro</a>
+          <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times"></i>
+          </label>
+        </ul>
+    </header>
+
+    <section>
+      <div class="title-tastes">
+        <h1>¿Que es lo que me gusta hacer?</h1>
+        <div class="video">
+          <video controls autoplay loop>
+            <source src="vid/lol.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>Unos de mis hobbies favoritos es jugar al League of Legends y Elsword, aunque no sea muy bueno en el me divierto en compañía de amigos, a veces paso buenos momentos y en otros un tanto no tan bueno. Lo mejor y lo primordial de esto es que en estos juegos he conocido a gente muy buena que podría llamársele amigos.</p>
+      </div>
+    </section>
+
+    <section class="animate">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
+
+    <div class="container-animate">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <!--<div class="text_els">
+        <h1>Hobby</h1>
+        <p>Elsword es mi juego favorito, y es en el cual he conocido a bastante gente y que a algunos podria llamarseles amigos.</p>
+      </div>-->
+      <ul id="scene">
+        <li class="layer" data-depth=".20"><img class="elsword_logo" src="img/elsword.webp"></li>
+
+        <div class="elsword">
+          <li class="layer" data-depth="0.025"><img class="cent" src="img/animate/centchung.png"></li>
+          <li class="layer" data-depth="0.025"><img class="elesis" src="img/animate/elesis.png"></li>
+          <li class="layer" data-depth="0.025"><img class="raven" src="img/animate/elsword.png"></li>
+          <li class="layer" data-depth="0.025"><img class="solace" src="img/animate/add.png"></li>
+        </div>
+
+        <div class="rombo">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </ul>
+    </div>
+
+    <section class="banner">
+        <img src="img/naruto.jpg" alt="naruto">
+        <div class="titulo">
+          <h1>Naruto.</h1>
+        </div>
+        <div class="contenido">
+          <p>Me identifico con este personaje ya que me considero <br>una persona desobligada y a veces un poco infantil, sin embargo <br> lo que me llama la atencion de este personaje es su perseverencia, <br> y es una de las cualidades que poseo, la de nunca <br> rendirme hasta cumplir lo que me propongo.</p>
+        </div>
+    </section>
+
+    <footer>
+      <p class="copyright">Todos los derechos reservados
+        ©<script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+      Mario Aleman.</p>
+    </footer>
+
+    <script>
+      var scene = document.getElementById('scene');
+      var parallax = new Parallax(scene);
+    </script>
+  </body>
+</html>
